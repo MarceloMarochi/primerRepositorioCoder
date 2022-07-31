@@ -1,0 +1,351 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* Para no tener problemas con las medidas en las cajas */
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  /* navegador oculte todos los contenidos que se salen de la caja del elemento */
+  overflow-x: hidden;
+}
+
+/* ANCHO MAXIMO Para que las imagenes se achiquen o agrande segun las pantalla */
+img {
+  max-width: 100%;
+}
+
+/* Por si se llegan a ver lineas (? */
+img,
+svg {
+  vertical-align: middle;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Para centrar el contenido */
+.container {
+  /* ocupa 80% de la pantalla*/
+  width: 80%;
+  /* 0 en top y boton - auto en right y left */
+  margin: 0 auto;
+  max-width: 1320px;
+}
+
+/* ------------------------------- INDEX ------------------------------- */
+
+/*---------------- GRILLA ----------------*/
+#grilla {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template: 20% auto 20%;
+  grid-template-areas:
+    "header header header"
+    "section1 section1 section1"
+    "section2 section2 section2"
+    "footer footer footer";
+}
+
+/*---------------- BARRA DE NAVEGACIÓN ----------------*/
+header {
+  background-color: #dc2f02;
+  /* ↓ Para que la barra de tareas quede visible cuando se scrollea */
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  grid-area: header;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+nav {
+  bottom: 70px;
+  left: 500px;
+}
+
+.nav__list {
+  list-style: none;
+  font-size: 0;
+}
+
+.nav__logo {
+  margin: 3rem 3rem 3rem 3rem;
+}
+
+.nav__link {
+  color: white;
+  /* Quita el subrayado */
+  text-decoration: none;
+  text-transform: uppercase;
+
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.nav__item {
+  margin: 6rem 3rem 3rem 3rem;
+  display: inline-block;
+  /* width: 15%; */
+  font-size: 2rem;
+}
+
+/* ---------------- PRIMERA SECCIÓN ---------------- */
+
+.section1 {
+  grid-area: section1;
+}
+
+.principal {
+  background-color: #ffbe0b;
+  /* Separo de arriba y abajo */
+  padding: 8rem 0 8rem 0;
+  height: 80vh;
+}
+
+.principal__name {
+  text-transform: capitalize;
+  color: white;
+  font-size: 4rem;
+  font-weight: 80%;
+  display: block;
+  margin: 0 0 5rem 0;
+}
+
+.principal__text {
+  font-weight: 600;
+  color: white;
+  font-size: 2.5rem;
+  display: inline-block;
+  margin: 2rem 10rem 0 0;
+  width: 30%;
+}
+
+.principal__img {
+  right: 20%;
+  display: inline-block;
+}
+
+/* ---------------- SEGUNDA SECCIÓN ---------------- */
+
+.section2 {
+  grid-area: section2;
+}
+
+.columnas {
+  background-color: #dc2f02;
+  height: 200vh;
+  padding: 15rem 0 15rem 0;
+}
+
+.columnas__first {
+  margin: 0rem 10rem 10rem 10rem;
+  /* ↓ Acomodar el texto adentro */
+  position: relative;
+}
+
+.columnas__first--titulo {
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  color: white;
+  font-size: 4rem;
+  font-weight: 650;
+  /* ↓ Acomodar el texto adentro */
+  position: absolute;
+  top: 47%;
+  right: 65%;
+  z-index: 2;
+}
+
+.columnas__first--image {
+  filter: blur(0.2rem);
+}
+
+.columnas__second {
+  position: relative;
+  margin: 10rem 10rem 10rem 10rem;
+}
+
+.columnas__second--titulo {
+  text-transform: capitalize;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  color: white;
+  font-size: 4rem;
+  /* ↓ Acomodar el texto adentro */
+  position: absolute;
+  top: 47%;
+  right: 59%;
+  z-index: 2;
+}
+
+.columnas__second--image {
+  filter: blur(0.2rem);
+}
+
+.columnas__third {
+  position: relative;
+  margin: 10rem 10rem 10rem 10rem;
+}
+
+.columnas__third--titulo {
+  text-transform: capitalize;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  color: white;
+  font-size: 4rem;
+  /* ↓ Acomodar el texto adentro */
+  position: absolute;
+  top: 47%;
+  right: 59%;
+  z-index: 2;
+}
+
+.columnas__third--image {
+  filter: blur(0.2rem);
+}
+
+/* ---------------- FOOTER ---------------- */
+footer {
+  background-color: black;
+  padding: 2.5rem 0 2.5rem 0;
+  text-align: center;
+  grid-area: footer;
+}
+
+.footer__text {
+  color: white;
+  display: block;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.footer-bottom__copyright {
+  color: white;
+  display: block;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.footer__logoRedes {
+  margin: 0 2rem 1.5rem 2rem;
+}
+
+.footer__linkRedes {
+  margin: 1.5rem 2rem 0 2rem;
+  font-size: 1.5rem;
+}
+
+/* ------------------------------- PRODUCTOS ------------------------------- */
+
+.principalProd {
+  background-color: #ffbe0b;
+  padding: 10rem 0 10rem 0;
+}
+
+.principalProd__title {
+  text-transform: capitalize;
+  color: white;
+  font-size: 4rem;
+  font-weight: 80%;
+  display: block;
+  margin: 0 0 5rem 0;
+}
+
+.principalProd__item {
+  margin: 5rem 0 0 0;
+}
+
+.principalProd__item--name {
+  font-weight: 600;
+  color: white;
+  font-size: 2.5rem;
+  margin: 0 0 2rem 0;
+  width: 30%;
+}
+
+/* ------------------------------- ¿QUIENES SOMOS? ------------------------------- */
+
+.principalQui {
+  background-color: #ffbe0b;
+  padding: 10rem 0 10rem 0;
+}
+
+.principalQui__title {
+  display: block;
+  text-transform: capitalize;
+  color: white;
+  font-size: 4rem;
+  font-weight: 80%;
+  margin: 5rem 0 5rem 0;
+}
+
+.principalQui__text {
+  font-weight: 600;
+  color: white;
+  font-size: 2.5rem;
+  margin: 0 0 0 0;
+  width: 30%;
+}
+
+.principalQui_img {
+  display: inline-block;
+}
+
+/* ------------------------------- CONTACTO ------------------------------- */
+
+.principalCon {
+  background-color: #ffbe0b;
+  min-height: 70vh;
+  padding: 0 0 10rem 0;
+}
+
+.principalCon_title {
+  color: white;
+  font-size: 4rem;
+  padding: 10rem 0 5rem 0;
+}
+
+.principalCon__item {
+  color: white;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.principalCon_div {
+  margin: 2rem 0 2rem 50rem;
+}
+
+/* ------------------------------- LOCALES ------------------------------- */
+
+.principalLoc {
+  background-color: #ffbe0b;
+}
+
+.principalLoc__title {
+  color: white;
+  font-size: 4rem;
+  padding: 10rem 0 5rem 0;
+}
+
+.principalLoc__altaCba {
+  color: white;
+  font-size: 2.5rem;
+  padding: 0 0 2.5rem 0;
+}
+
+.principalLoc__text {
+  color: white;
+  font-size: 2rem;
+  margin: 2.5rem 0 5rem 0;
+}
+
+.principalLoc__mapa {
+  margin: 0 0 10rem 0;
+}
