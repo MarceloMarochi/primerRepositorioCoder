@@ -48,7 +48,7 @@ footer {
 
 /* ---------------------------- MOBILE ---------------------------- */
 
-#grilla {
+/* #grilla {
   display: grid;
   min-height: 100vh;
   grid-template-columns: 1fr;
@@ -58,9 +58,49 @@ footer {
     "section1"
     "section2"
     "footer";
-}
+} */
 
 /* -------- HEADER --------- */
+
+header {
+  background-color: #dc2f02;
+  position: sticky;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+}
+
+nav {
+  width: 100%;
+  font-size: 1.3rem;
+  display: inline-block;
+}
+.nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding: 0.5rem 0 0.5rem 0;
+}
+
+.nav__link {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.nav-link {
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.nav__logo {
+  display: inline-block;
+}
+/* 
+#navbarNav {
+  color: white;
+}
 
 header {
   background-color: #dc2f02;
@@ -68,7 +108,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 3;
-  text-align: center;
+  color: white;
 }
 
 nav {
@@ -93,7 +133,7 @@ nav {
   text-decoration: none;
 }
 
-/* Se pone opaco cuando pasas el mouse por encima */
+/* Se pone opaco cuando pasas el mouse por encima 
 .nav__link:hover,
 .nav__link:focus {
   opacity: 0.65;
@@ -114,7 +154,7 @@ nav {
   animation-delay: 1s;
   animation-iteration-count: 1;
 }
-
+ */
 /* --------------- INDEX -------------- */
 /* -------- SECTION 1 --------- */
 
