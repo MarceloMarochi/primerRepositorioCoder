@@ -1,0 +1,268 @@
+@import "index";
+@import "productos";
+@import "contacto";
+@import "locales";
+@import "quienes";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+img,
+svg {
+  vertical-align: middle;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+  max-width: 1320px;
+}
+
+/* Nombres áreas */
+
+header {
+  grid-area: header;
+}
+
+.section1 {
+  grid-area: section1;
+}
+
+.section2 {
+  grid-area: section2;
+}
+
+footer {
+  grid-area: footer;
+}
+
+/* ---------------------------- MOBILE ---------------------------- */
+
+/* -------- HEADER --------- */
+
+header {
+  background-color: #dc2f02;
+  position: sticky;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+nav {
+  width: 100%;
+  font-size: 1.3rem;
+}
+
+.nav__list {
+  width: 100%;
+  font-size: 1.3rem;
+}
+
+.nav__link {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.ul_nav {
+  justify-content: end;
+  align-items: flex-end;
+  margin-right: 1rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 80%;
+  }
+
+  /* HEADER */
+  .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2rem 0 2rem 0;
+  }
+
+  .navbar-items-complete {
+    align-items: flex-end;
+  }
+
+  .nav__item {
+    display: inline-block;
+    margin-left: 2rem;
+    font-size: 1.4rem;
+  }
+
+  /* -----------INDEX----------- */
+  /* SECTION 1 */
+  .principal__name {
+    font-size: 3rem;
+    margin-bottom: 1.2rem;
+    text-align: left;
+  }
+
+  .principal__text {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+
+  /* SECTION 2 */
+  .columnas {
+    text-align: center;
+  }
+  /* FOOTER */
+  footer {
+    font-size: 1.5rem;
+  }
+  .footer__text {
+    font-size: 1.5rem;
+  }
+
+  .footer-bottom__copyright {
+    font-size: 1.5rem;
+  }
+
+  /* PRODUCTOS */
+  .principalProd__title {
+    font-size: rem;
+  }
+  .principalProd__item--name {
+    font-weight: 600;
+    font-size: 2.5rem;
+  }
+
+  /* CONTACTO */
+  .principalCon {
+    min-height: 70vh;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* ESTO NO ME FUNCIONA */
+  .primeraSection {
+    min-height: 45vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 0.2fr auto;
+    grid-row-gap: 5%;
+    grid-template-areas:
+      "title img"
+      "texto img";
+    justify-items: center;
+  }
+
+  @keyframes animacion1 {
+    0% {
+      opacity: 0.3;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .principal__name {
+    font-size: 3rem;
+    margin-bottom: 1.2rem;
+    text-align: left;
+    animation-duration: 2s;
+    animation-name: animacion1;
+    animation-iteration-count: 3;
+  }
+
+  .principal__text {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+
+  .titleP {
+    grid-area: title;
+    text-align: center;
+  }
+  .textP {
+    grid-area: texto;
+    text-align: justify;
+  }
+  .imgP {
+    grid-area: img;
+    text-align: left;
+  }
+
+  .segundaSection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 5%;
+    grid-template-rows: auto;
+    justify-items: stretch;
+  }
+
+  /* PRODUCTOS */
+  .principalProd {
+    min-height: 80vh;
+  }
+  .podFlex {
+    display: flex;
+  }
+
+  .principalProd__item {
+    padding: 2rem 1rem 0 1rem;
+  }
+
+  .principalProd__item--name {
+    font-weight: 500;
+    font-size: 2rem;
+  }
+
+  /* QUIENES */
+
+  .principalQui__title {
+    font-size: 2.5rem;
+    margin-bottom: 1.7rem;
+  }
+
+  .principalQui__text {
+    margin-bottom: 1.8rem;
+    font-size: 2rem;
+  }
+
+  /* CONTACTO */
+  .principalCon {
+    min-height: 80vh;
+  }
+  .principalCon_title {
+    font-size: 2.5rem;
+  }
+
+  /* LOCALES */
+
+  .principalLoc__title {
+    font-size: 2.5rem;
+    margin-bottom: 1.8rem;
+  }
+
+  .principalLoc__altaCba {
+    text-align: center;
+    margin-bottom: 1.7rem;
+    font-size: 2.2rem;
+  }
+
+  .principalLoc__text {
+    margin: 1.8rem 0 1.8rem 0;
+    font-size: 1.8rem;
+    text-align: justify;
+  }
+}

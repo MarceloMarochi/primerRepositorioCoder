@@ -1,0 +1,20 @@
+{
+  "name": "preentregamarochi_2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss/style.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarceloMarochi/primerRepositorioCoder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarceloMarochi/primerRepositorioCoder/issues"
+  },
+  "homepage": "https://github.com/MarceloMarochi/primerRepositorioCoder#readme"
+}

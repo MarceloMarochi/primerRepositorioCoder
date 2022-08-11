@@ -1,0 +1,126 @@
+.section1 {
+  background-color: #ffbe0b;
+  height: 100%;
+  padding: 5rem 0 5rem 0;
+
+  .principal__name {
+    text-transform: capitalize;
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+    text-align: center;
+  }
+
+  .principal__text {
+    font-weight: 500;
+    color: white;
+    margin-bottom: 1.3rem;
+    font-size: 1.3rem;
+    text-align: justify;
+  }
+}
+
+/* -------- SECTION 2 --------- */
+
+.section2 {
+  background-image: linear-gradient(to top, #dc2f02, #ffbe0b);
+  height: 100%;
+  padding: 5rem 0 5rem 0;
+}
+
+.segundaSection {
+  width: 85%;
+}
+
+/* --- PRIMER IMAGEN --- */
+/* ↓ Acomodar el texto adentro de la foto */
+.columnas__first {
+  position: relative;
+  padding-bottom: 3rem;
+}
+
+.columnas__first--titulo {
+  text-decoration: none;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  color: white;
+  font-size: 2rem;
+  font-weight: 650;
+  /* ↓ Acomodar el texto adentro */
+  position: absolute;
+  z-index: 2;
+  justify-content: center;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.columnas__first--image {
+  filter: blur(0.15rem);
+}
+
+/*---SEGUNDA IMAGEN ---*/
+
+.columnas__second {
+  position: relative;
+  padding-bottom: 3rem;
+}
+
+.columnas__second--titulo {
+  text-shadow: black 0.1em 0.1em 0.2em;
+  color: white;
+  font-size: 2rem;
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.columnas__second--image {
+  filter: blur(0.15rem);
+}
+
+/*---TERCERA IMAGEN---*/
+
+.columnas__third {
+  position: relative;
+}
+
+.columnas__third--titulo {
+  text-shadow: black 0.1em 0.1em 0.2em;
+  color: white;
+  font-size: 2rem;
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.columnas__third--image {
+  filter: blur(0.15rem);
+}
+
+/* ---------------- FOOTER ---------------- */
+footer {
+  background-color: rgb(25, 25, 25);
+  padding: 1.2rem 0 1.4rem 0;
+  text-align: center;
+}
+
+.footer__text {
+  color: white;
+  font-size: 1.1rem;
+  padding-bottom: 0.5rem;
+}
+
+.footer__logoRedes {
+  padding-bottom: 0.5rem;
+}
+
+.footer-bottom__copyright {
+  color: white;
+  font-size: 1.1rem;
+  padding-bottom: 0.5rem;
+}
