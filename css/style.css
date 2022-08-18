@@ -63,7 +63,7 @@
   padding-bottom: 3rem;
 }
 
-.columnas__second--titulo {
+.columnas__second--titulo, .columnas__third--titulo {
   text-shadow: black 0.1em 0.1em 0.2em;
   color: white;
   font-size: 2rem;
@@ -84,14 +84,8 @@
 }
 
 .columnas__third--titulo {
-  text-shadow: black 0.1em 0.1em 0.2em;
-  color: white;
-  font-size: 2rem;
-  position: absolute;
-  z-index: 2;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  justify-content: center;
+  text-align: center;
 }
 
 .columnas__third--image {

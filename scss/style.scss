@@ -57,7 +57,7 @@ footer {
 /* -------- HEADER --------- */
 
 header {
-  background-color: #dc2f02;
+  background-color: map-get($colores, rojo);
   position: sticky;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
   color: white;
