@@ -10,6 +10,12 @@
       href="../img/burgerpngdc2f02.png"
       type="image/x-icon"
     />
+    <meta name="keywords" content="hamburguesa Stroke & Stone Historia" />
+    <meta name="title" content="Stroke & Stone Burguer | ¿Quienes Somos?" />
+    <meta
+      name="description"
+      content="Stroke & Stone es una hamburguesería de la ciudad de Córdoba, fundada hace 10 años con el objetivo de comercializar hamburguesas de calidad."
+    />
     <!-- Fuentes -->
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap"
@@ -30,36 +36,67 @@
     <div class="grilla">
       <header>
         <div class="container">
+          <!-- MENU HAMBURGUESA -->
           <div class="row">
-            <!-- Logo -->
-            <a href="">
-              <img
-                class="nav__logo"
-                src="../img/logoBlanco.png"
-                alt="Logo hamburguesa"
-              />
-            </a>
-            <!-- Lista no ordenada con Menu Pricipal -->
-            <nav>
-              <ul class="nav__list">
-                <li class="nav__item">
-                  <a class="nav__link" href="../index.html">Inicio</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="./productos.html">Productos</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="./quienesSomos.html"
-                    >¿Quienes Somos?</a
-                  >
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="./contacto.html">Contacto</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="./locales.html">Locales</a>
-                </li>
-              </ul>
+            <nav class="navbar navbar-expand-lg nav__list">
+              <div class="container-fluid">
+                <!-- Logo -->
+                <a href="">
+                  <img
+                    class="nav__logo col"
+                    src="../img/logoBlanco.png"
+                    alt="Logo hamburguesa"
+                  />
+                </a>
+                <a class="navbar-brand" href="#"></a>
+
+                <!-- Boton -->
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarNav"
+                  aria-controls="navbarNav"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Nav -->
+                <div class="collapse navbar-collapse left-0" id="navbarNav">
+                  <ul class="navbar-nav ul_nav mb-2">
+                    <li class="nav-item">
+                      <a
+                        class="nav-link active nav__link"
+                        aria-current="page"
+                        href="../index.html"
+                        >INICIO</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link nav__link" href="./productos.html"
+                        >PRODUCTOS</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link nav__link" href="./quienesSomos.html"
+                        >¿QUIENES SOMOS?</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link nav__link" href="./contacto.html"
+                        >CONTACTO</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link nav__link" href="./locales.html"
+                        >LOCALES</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </nav>
           </div>
         </div>

@@ -10,6 +10,15 @@
       href="../img/burgerpngdc2f02.png"
       type="image/x-icon"
     />
+    <meta
+      name="keywords"
+      content="contacto criticas hamburguesría opiniones busqueda laboral "
+    />
+    <meta name="title" content="Stroke & Stone Burguer | Contacto" />
+    <meta
+      name="description"
+      content="Está es la página de contacto con Stroke & Stone Burger."
+    />
     <!-- Fuentes -->
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap"
@@ -30,36 +39,67 @@
     <div id="grilla">
       <header>
         <div class="container">
+          <!-- MENU HAMBURGUESA -->
           <div class="row">
-            <!-- Logo -->
-            <a href="">
-              <img
-                class="nav__logo"
-                src="../img/logoBlanco.png"
-                alt="Logo hamburguesa"
-              />
-            </a>
-            <!-- Lista no ordenada con Menu Pricipal -->
-            <nav>
-              <ul class="nav__list">
-                <li class="nav__item">
-                  <a class="nav__link" href="../index.html">Inicio</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="./productos.html">Productos</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="./quienesSomos.html"
-                    >¿Quienes Somos?</a
-                  >
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="./contacto.html">Contacto</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="./locales.html">Locales</a>
-                </li>
-              </ul>
+            <nav class="navbar navbar-expand-lg nav__list">
+              <div class="container-fluid">
+                <!-- Logo -->
+                <a href="">
+                  <img
+                    class="nav__logo col"
+                    src="../img/logoBlanco.png"
+                    alt="Logo hamburguesa"
+                  />
+                </a>
+                <a class="navbar-brand" href="#"></a>
+
+                <!-- Boton -->
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarNav"
+                  aria-controls="navbarNav"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Nav -->
+                <div class="collapse navbar-collapse left-0" id="navbarNav">
+                  <ul class="navbar-nav ul_nav mb-2">
+                    <li class="nav-item">
+                      <a
+                        class="nav-link active nav__link"
+                        aria-current="page"
+                        href="../index.html"
+                        >INICIO</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link nav__link" href="./productos.html"
+                        >PRODUCTOS</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link nav__link" href="./quienesSomos.html"
+                        >¿QUIENES SOMOS?</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link nav__link" href="./contacto.html"
+                        >CONTACTO</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link nav__link" href="./locales.html"
+                        >LOCALES</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </nav>
           </div>
         </div>
@@ -68,87 +108,6 @@
       <main>
         <section class="principalCon">
           <div class="container">
-            <!-- <h1 class="principalCon_title">Contactanos:</h1>
-
-            Formulario de contacto
-            <fieldset>
-              <form action="">
-                Datos del cliente
-                <div class="principalCon_div">
-                  <label class="principalCon__item" for="nombre">Nombre:</label>
-                  <input
-                    type="text"
-                    name="nombre"
-                    placeholder="Escriba aqui su nombre"
-                  />
-                </div>
-
-                <div class="principalCon_div">
-                  <label class="principalCon__item" for="apellido"
-                    >Apellido:</label
-                  >
-                  <input
-                    type="text"
-                    name="apellido"
-                    placeholder="Escriba aqui su apellido"
-                  />
-                </div>
-
-                <div class="principalCon_div">
-                  <label class="principalCon__item" for="email">Email:</label>
-                  <input
-                    type="text"
-                    name="email"
-                    placeholder="Escriba aqui su email"
-                  />
-                </div>
-
-                <div class="principalCon_div">
-                  <label class="principalCon__item" for="telefono"
-                    >Teléfono:</label
-                  >
-                  <input
-                    type="text"
-                    name="telefono"
-                    placeholder="Escriba aqui su número"
-                  />
-                </div>
-
-                <div class="principalCon_div">
-                  <span class="principalCon__item">Hombre</span>
-                  <input type="radio" name="sexo" value="hombre" />
-                  <span class="principalCon__item">Mujer</span>
-                  <input type="radio" name="sexo" value="mujer" />
-                </div>
-
-                Menu Desplegable Asunto
-                <div class="principalCon_div">
-                  <select class="principalCon__item" name="asunto">
-                    <option value="critica">Crítica</option>
-                    <option value="sugerencia">Sugerencia</option>
-                    <option value="reclamo">Reclamo</option>
-                    <option value="trabajarNosotros">
-                      Trabajar con nosotros
-                    </option>
-                    <option value="otro">Otro</option>
-                  </select>
-                </div>
-
-                Mensaje 
-                <div class="principalCon_div">
-                  <label class="principalCon__item" for="mensaje"
-                    >Mensaje</label
-                  >
-                </div>
-                <div class="principalCon_div">
-                  <textarea name="mensaje" cols="30" rows="10"></textarea>
-                </div>
-
-                Botones 
-                <input class="principalCon_div" type="reset" value="Cancelar" />
-                <input type="submit" value="Enviar" />
-              </form>
-            </fieldset> -->
             <form class="row g-3">
               <div class="col-md-6">
                 <label for="nombre" class="form-label">Nombre</label>
@@ -192,9 +151,9 @@
                 </select>
               </div>
 
-              <div class="col-12">
+              <div class="col-12 cajaMensaje">
                 <label for="mensaje" class="form-label">Mensaje</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+                <textarea class="form-control " id="exampleFormControlTextarea1" rows="3"></textarea>
               </div>
               <div class="col-12">
                 <button type="submit" class="btn btn-primary">Enviar</button>

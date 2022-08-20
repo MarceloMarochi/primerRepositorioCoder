@@ -157,6 +157,13 @@ footer {
   text-align: center;
 }
 
+.cajaMensaje {
+  max-width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 15px;
+}
+
 .principalLoc {
   background-color: #ffbe0b;
   height: 100%;
